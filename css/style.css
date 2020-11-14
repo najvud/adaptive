@@ -29,10 +29,9 @@
      .header {
          position: relative;
          width: 100%;
-         background-image: url(/img/banner-mobile.jpg);
+         background-image: url(../img/banner-mobile.jpg);
          background-position: center;
          background-size: cover;
-         height: 600px;
      }
      
      .header::before {
