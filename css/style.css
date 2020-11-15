@@ -41,6 +41,12 @@
          padding-bottom: 10%;
      }
      
+     @media (min-width: 500px) {
+         .header {
+             padding-bottom: 50%;
+         }
+     }
+     
      .header::before {
          position: absolute;
          content: "";
@@ -110,8 +116,8 @@
          right: 0;
          bottom: 0;
          width: 20%;
-         margin: 5% auto 0 auto;
-         padding-bottom: 20px;
+         margin: 0 auto 0 auto;
+         padding-bottom: 8%;
          border-bottom: 3px solid #e1d9bd;
      }
      
@@ -130,9 +136,9 @@
      .main__post--first {
          position: relative;
          background-image: url(../img/trend1.jpg);
-         background-position: center;
+         background-position: center center;
          background-size: cover;
-         padding: 27% 3% 5% 3%;
+         padding: 25% 3% 5% 3%;
      }
      
      .main__post--first::before {
@@ -157,28 +163,75 @@
      
      .main__tags {
          display: flex;
+         font-size: 14px;
      }
      
      .main__tags--link {
+         display: block;
+         margin-right: 7%;
          color: #a59251;
      }
      
-     .main__title {}
+     .main__title {
+         margin-top: 4%;
+     }
      
      .main__post--second {
+         position: relative;
          background-image: url(../img/trend2.jpg);
          background-position: center;
          background-size: cover;
+         padding: 27% 3% 5% 3%;
+         margin-top: 1%;
+     }
+     
+     .main__post--second::before {
+         content: "";
+         position: absolute;
+         top: 0;
+         left: 0;
+         right: 0;
+         bottom: 0;
+         background: #000;
+         opacity: 0.6;
      }
      
      .main__post--third {
+         position: relative;
          background-image: url(../img/trend3.jpg);
          background-position: center;
          background-size: cover;
+         padding: 27% 3% 5% 3%;
+         margin-top: 1%;
+     }
+     
+     .main__post--third::before {
+         content: "";
+         position: absolute;
+         top: 0;
+         left: 0;
+         right: 0;
+         bottom: 0;
+         background: #000;
+         opacity: 0.6;
      }
      
      .main__post--fourth {
+         position: relative;
          background-image: url(../img/trend4.jpg);
          background-position: center;
          background-size: cover;
+         padding: 27% 3% 5% 3%;
+         margin-top: 1%;
+     }
+     
+     .main__post--fourth::before {
+         content: "";
+         position: absolute;
+         top: 0;
+         left: 0;
+         right: 0;
+         bottom: 0;
+         background: #000;
+         opacity: 0.6;
      }
