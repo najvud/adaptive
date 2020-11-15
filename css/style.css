@@ -477,7 +477,7 @@
          display: flex;
          align-items: center;
          flex-wrap: wrap;
-         width: 90%;
+         width: 290px;
          margin: 10% auto 0 auto;
          font-family: "OpenSans-Bold", arial, serif;
          font-weight: 700;
@@ -500,6 +500,6 @@
          margin-right: 1%;
      }
      
-     .tags__link:nth-child(n+6) {
+     .tags__link:nth-child(n+5) {
          margin-top: 1%;
      }
