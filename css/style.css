@@ -5,6 +5,13 @@
          font-style: normal;
      }
      
+     @font-face {
+         font-family: "OpenSans-Regular";
+         src: url(/fonts/OpenSans-Regular.woff);
+         font-weight: 400;
+         font-style: normal;
+     }
+     
      body {
          min-width: 320px;
          margin: 0;
@@ -29,6 +36,11 @@
      h6 {
          padding: 0;
          margin: 0;
+     }
+     
+     p {
+         margin: 0;
+         padding: 0;
      }
      
      .header {
@@ -136,7 +148,7 @@
      .main__post--first {
          position: relative;
          background-image: url(../img/trend1.jpg);
-         background-position: center center;
+         background-position: center bottom;
          background-size: cover;
          padding: 25% 3% 5% 3%;
      }
@@ -155,7 +167,7 @@
      .main__info {
          position: relative;
          width: 90%;
-         padding: 10% 0 10% 5%;
+         padding: 7% 0 7% 5%;
          margin: 0 auto 0 auto;
          border: 3px solid rgba(105, 92, 54, 1);
          font-size: 10px;
@@ -163,7 +175,11 @@
      
      .main__tags {
          display: flex;
+         flex-wrap: wrap;
          font-size: 14px;
+         text-transform: uppercase;
+         font-family: "OpenSans-Bold", arial, serif;
+         font-weight: 700;
      }
      
      .main__tags--link {
@@ -179,7 +195,7 @@
      .main__post--second {
          position: relative;
          background-image: url(../img/trend2.jpg);
-         background-position: center;
+         background-position: center bottom;
          background-size: cover;
          padding: 27% 3% 5% 3%;
          margin-top: 1%;
@@ -199,7 +215,7 @@
      .main__post--third {
          position: relative;
          background-image: url(../img/trend3.jpg);
-         background-position: center;
+         background-position: center bottom;
          background-size: cover;
          padding: 27% 3% 5% 3%;
          margin-top: 1%;
@@ -219,7 +235,7 @@
      .main__post--fourth {
          position: relative;
          background-image: url(../img/trend4.jpg);
-         background-position: center;
+         background-position: center bottom;
          background-size: cover;
          padding: 27% 3% 5% 3%;
          margin-top: 1%;
@@ -234,4 +250,92 @@
          bottom: 0;
          background: #000;
          opacity: 0.6;
+     }
+     
+     .news {
+         width: 100%;
+         margin-top: 10%;
+     }
+     
+     .news__post {
+         position: relative;
+         width: 90%;
+         margin: 0 auto 0 auto;
+         padding-bottom: 7%;
+     }
+     
+     .news__post:nth-child(n+2) {
+         margin-top: 10%;
+     }
+     
+     .news__post::before {
+         content: "";
+         position: absolute;
+         top: 0;
+         left: 0;
+         right: 0;
+         bottom: 0;
+         border-bottom: 3px solid #eeeeee;
+         margin-top: 5%;
+     }
+     
+     .news__img {
+         width: 100%;
+         height: 100%;
+     }
+     
+     .news__tags {
+         display: flex;
+         flex-wrap: wrap;
+         margin-top: 1%;
+         font-size: 14px;
+         text-transform: uppercase;
+         font-family: "OpenSans-Bold", arial, serif;
+         font-weight: 700;
+         font-style: normal;
+     }
+     
+     .news__tags--link {
+         display: block;
+         margin-right: 5%;
+         color: #b59f5b;
+     }
+     
+     .news__title {
+         margin-top: 1%;
+         font-family: "OpenSans-Bold", arial, serif;
+         font-weight: 700;
+         font-style: normal;
+         text-transform: uppercase;
+         font-size: 14px;
+     }
+     
+     .news__data-autor {
+         display: flex;
+         flex-wrap: wrap;
+         margin-top: 3%;
+         font-size: 12px;
+     }
+     
+     .news__data {
+         margin-right: 3%;
+         font-family: "OpenSans-Regular", arial, serif;
+         font-weight: 400;
+         font-style: normal;
+         color: #888888;
+     }
+     
+     .news__autor {
+         font-family: "OpenSans-Bold", arial, serif;
+         font-weight: 700;
+         font-style: normal;
+     }
+     
+     .news__text {
+         display: block;
+         margin-top: 3%;
+         font-family: "OpenSans-Regular", arial, serif;
+         font-weight: 400;
+         font-style: normal;
+         font-size: 78%;
      }
