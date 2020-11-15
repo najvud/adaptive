@@ -14,6 +14,7 @@
      ul {
          padding: 0;
          margin: 0;
+         list-style-type: none;
      }
      
      a {
@@ -37,7 +38,7 @@
          background-image: url(../img/banner-mobile.jpg);
          background-position: center;
          background-size: cover;
-         /* padding-bottom: 30%; */
+         padding-bottom: 30%;
      }
      
      .header::before {
@@ -83,4 +84,100 @@
          font-family: "OpenSans-Bold", arial, serif;
          font-style: normal;
          color: white;
+     }
+     
+     .main {
+         width: 100%;
+     }
+     
+     .main__heading {
+         position: relative;
+         margin-top: 10%;
+         font-family: "OpenSans-Bold", arial, serif;
+         font-weight: 700;
+         font-style: normal;
+         text-align: center;
+         text-transform: uppercase;
+         font-size: 60%;
+     }
+     
+     .main__heading--title::before {
+         content: "";
+         position: absolute;
+         top: 0;
+         left: 0;
+         right: 0;
+         bottom: 0;
+         width: 20%;
+         margin: 5% auto 0 auto;
+         padding-bottom: 20px;
+         border-bottom: 3px solid #e1d9bd;
+     }
+     
+     .main__content {
+         color: white;
+         text-transform: uppercase;
+         font-family: "OpenSans-Bold", arial, serif;
+         font-weight: 700;
+         font-style: normal;
+     }
+     
+     .main__post {
+         margin-top: 10%;
+     }
+     
+     .main__post--first {
+         position: relative;
+         background-image: url(../img/trend1.jpg);
+         background-position: center;
+         background-size: cover;
+         padding: 27% 3% 5% 3%;
+     }
+     
+     .main__post--first::before {
+         content: "";
+         position: absolute;
+         top: 0;
+         left: 0;
+         right: 0;
+         bottom: 0;
+         background: #000;
+         opacity: 0.6;
+     }
+     
+     .main__info {
+         position: relative;
+         width: 90%;
+         padding: 10% 0 10% 5%;
+         margin: 0 auto 0 auto;
+         border: 3px solid rgba(105, 92, 54, 1);
+         font-size: 10px;
+     }
+     
+     .main__tags {
+         display: flex;
+     }
+     
+     .main__tags--link {
+         color: #a59251;
+     }
+     
+     .main__title {}
+     
+     .main__post--second {
+         background-image: url(../img/trend2.jpg);
+         background-position: center;
+         background-size: cover;
+     }
+     
+     .main__post--third {
+         background-image: url(../img/trend3.jpg);
+         background-position: center;
+         background-size: cover;
+     }
+     
+     .main__post--fourth {
+         background-image: url(../img/trend4.jpg);
+         background-position: center;
+         background-size: cover;
      }
